@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Create card to hold inventory items-->
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="8dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Item Thumbnail -->
+        <!--
+        <ImageView
+            android:id="@+id/itemThumbnail"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:contentDescription="@string/app_name"
+            android:padding="5dp"
+            android:src="@drawable/testimg" />
+        -->
+
+        <!-- Item title -->
+        <TextView
+            android:id="@+id/itemName"
+            android:layout_width="390dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="-181dp"
+            android:layout_toEndOf="@+id/itemThumbnail"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:text="Item Name"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <!-- Quantity -->
+        <TextView
+            android:id="@+id/quantTitle"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/itemName"
+            android:paddingTop="7dp"
+            android:text="Quantity:"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/itemQuantity"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/itemName"
+            android:layout_toEndOf="@+id/quantTitle"
+            android:paddingTop="7dp"
+            android:paddingEnd="20dp"
+            android:text="testing "
+            android:textAlignment="textEnd"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <!-- BUTTONS -->
+
+        <!-- Add to quantity-->
+
+        <!-- remove from quantity-->
+
+        <!-- delete item-->
+
+        <Button
+            android:id="@+id/buttonAddQuantity"
+            android:layout_width="111dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/itemQuantity"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="17dp"
+            android:text="+"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/buttonReduceQuantity"
+            android:layout_width="111dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/itemQuantity"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="0dp"
+            android:layout_toEndOf="@+id/buttonAddQuantity"
+            android:text="-"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/buttonDeleteItem"
+            android:layout_width="111dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/itemQuantity"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="-1dp"
+            android:layout_marginEnd="17dp"
+            android:layout_toEndOf="@+id/buttonReduceQuantity"
+            android:text="Delete"
+            android:textSize="12sp" />
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

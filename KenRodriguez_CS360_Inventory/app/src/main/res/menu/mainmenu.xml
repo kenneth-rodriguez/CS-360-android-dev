@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:item="http://schemas.android.com/tools">
+
+
+    <!--Add Item icon-->
+    <item
+        android:id="@+id/add_item"
+        android:icon="@drawable/add_new_item_24dp"
+        android:title="Add Item"
+        app:showAsAction="always"/>
+
+    <!--Search icon
+    <item
+        android:id="@+id/search_items"
+        android:icon="@drawable/search_item_24dp"
+        android:title="Search Item"
+        app:showAsAction="ifRoom"/>
+    -->
+
+    <!--Settings icon (for notification settings)-->
+    <item
+        android:id="@+id/settings"
+        android:icon="@drawable/settings_24dp"
+        android:title="Settings"
+        app:showAsAction="ifRoom"/>
+
+
+</menu>
